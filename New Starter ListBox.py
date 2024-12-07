@@ -107,36 +107,31 @@ class BudgetApp:
         # Create SearchableComboBox with the external entry widget
         SearchableComboBox(expense_name_var, options)  # Initialize dropdown with options
 
-
         # Create entry field for expense name
         expense_name_var1 = tk.Entry(self.main_frame)  # Entry box for typing expense name
         expense_name_var1.grid(row=4, column=0, pady=50)  # Position entry box
 
-        # Create SearchableComboBox with the external entry widget
-        SearchableComboBox(expense_name_var1, options)  # Initialize dropdown with options
+        options3 = ["Toyota Corolla", "Honda Civic", "Ford Mustang", 
+        "Chevrolet Camaro", "BMW 3 Series", "Mercedes-Benz C-Class", 
+        "Audi A4", "Tesla Model 3", "Nissan Altima", "Hyundai Elantra", 
+        "Subaru Outback", "Jeep Wrangler", "Kia Soul", "Volkswagen Golf", 
+        "Mazda CX-5", "Volvo XC40", "Lexus RX 350", "Porsche 911", 
+        "Chevrolet Silverado", "Ford F-150"]
 
-        # Create entry field for expense name
-        expense_name_var2 = tk.Entry(self.main_frame)  # Entry box for typing expense name
-        expense_name_var2.grid(row=7, column=0, pady=50)  # Position entry box
-
         # Create SearchableComboBox with the external entry widget
-        SearchableComboBox(expense_name_var2, options)  # Initialize dropdown with options
+        SearchableComboBox(expense_name_var1, options3)  # Initialize dropdown with options
+
+        options2 = ["Lion", "Tiger", "Elephant", "Giraffe", "Zebra", "Kangaroo", "Panda",
+         "Koala", "Penguin", "Dolphin", "Whale", "Eagle", "Wolf", "Bear", "Fox", "Rabbit",
+          "Deer", "Horse", "Camel", "Cheetah"]
+
 
         # Create entry field for expense name
         expense_name_var3 = tk.Entry(self.main_frame)  # Entry box for typing expense name
-        expense_name_var3.grid(row=1, column=3, pady=50)  # Position entry box
+        expense_name_var3.grid(row=7, column=0, pady=50)  # Position entry box
 
         # Create SearchableComboBox with the external entry widget
-        SearchableComboBox(expense_name_var3, options)  # Initialize dropdown with options
-
-        options2 = ["Pear", "Apple"]
-
-        # Create entry field for expense name
-        expense_name_var4 = tk.Entry(self.main_frame)  # Entry box for typing expense name
-        expense_name_var4.grid(row=4, column=3, pady=50)  # Position entry box
-
-        # Create SearchableComboBox with the external entry widget
-        SearchableComboBox(expense_name_var4, options2)  # Initialize dropdown with options
+        SearchableComboBox(expense_name_var3, options2)  # Initialize dropdown with options
 
     def clear_frame(self, frame):
         """Clear all widgets from a frame."""
