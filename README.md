@@ -1,1 +1,1 @@
-# New-Starter-Listbox
+This project demonstrates a simple example of a list box that dynamically displays options based on user input. The options are sourced from an array. There is an example video to go with this on this youtube channel:
